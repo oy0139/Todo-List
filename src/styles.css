@@ -1,0 +1,45 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dashboard {
+    display: grid;
+    grid-template: 1fr 3fr / 300px 1fr;
+    
+}
+
+.Projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+#calendar-dropdown {
+    position: absolute; 
+    visibility: hidden;
+    opacity: 0;
+    z-index: 100;
+    transition: opacity 0.3s;
+}
+.calendar-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+#my-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    transition: opacity 0.2s, visibility 0.2s;
+    z-index: 1000;
+}
+
+#my-form.form-visible {
+    visibility: visible;
+    opacity: 1;
+}

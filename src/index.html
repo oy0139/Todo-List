@@ -6,6 +6,189 @@
     <title>To-Do List</title>
 </head>
 <body>
-    
+    <div class="dashboard">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="header info">
+                    <p class="profile-name">Chris</p>
+                    <div class="profile icon"></div>
+                </div>
+                <div class="header icons">
+                    <svg class="icon-bell">
+
+                    </svg>
+                    <svg class="layout-icon">
+
+                    </svg>
+              </div>
+           </div>
+
+           <div class="Sidebar-body-1">
+                <ul class="add-task">
+                    <svg class="plus">
+                    
+                    </svg>
+                    <p>Add task</p>
+                </ul>
+                <ul class="search">
+                    <svg class="magnifying-glass">
+                    
+                    </svg>
+                    <p>Search</p>
+                </ul>
+                 <ul class="inbox">
+                    <svg class="mail">
+                    
+                    </svg>
+                    <p>Inbox</p>
+                </ul>
+                 <ul class="today">
+                    <svg class="calendar-icon">
+                    
+                    </svg>
+                    <p>Today</p>
+                </ul>
+                 <ul class="upcoming">
+                    <svg class="dotted-calendar">
+                    
+                    </svg>
+                    <p>Upcoming</p>
+                </ul>
+                 <ul class="filter">
+                    <svg class="filter-icon">
+                    
+                    </svg>
+                    <p>Filter</p>
+                </ul>
+           </div>
+
+           <div class="Sidebar-body-2">
+              <div class="Projects section">
+                <div class="Project header">
+                    <svg class="project-icon">
+
+                    </svg>
+                    <div class="header-title">My Projects</div>
+                </div>
+                <div class="Fitness">
+                    <svg class="hashtag-1">
+                    </svg>
+                    <p class="text">Fitness</p>
+                </div>
+                <div class="Grocery">
+                    <svg class="hashtag-2">
+                    </svg>
+                    <p class="text">Grocery</p>
+                </div>
+                <div class="Appointments">
+                    <svg class="hashtag-3">
+                    </svg>
+                    <p class="text">Appointments</p>
+                </div>
+              </div>
+           </div>
+
+           <div class="Sidebar-body-3">
+              <div class="body-3-header">
+                 <svg class="team-icon">
+                 </svg>
+                 <p class="team-text">Team</p>
+              </div>
+              <div class="new-brand">
+                    <svg class="hashtag-4">
+                    </svg>
+                    <p class="text">New Brand</p>
+                </div>
+                <div class="Website Update">
+                    <svg class="hashtag-5">
+                    </svg>
+                    <p class="text">Website Update</p>
+                </div>
+                <div class="Project Roadmap">
+                    <svg class="hashtag-6">
+                    </svg>
+                    <p class="text">Product Roadmap</p>
+                </div>
+                <div class="Meeting Agenda">
+                    <svg class="hashtag-7">
+                    </svg>
+                    <p class="text">Meeting Agenda</p>
+                </div>
+           </div>
+
+                    
+            </div>
+            <div class="Main-content">
+                <div class = "view-icon-section">
+                    <svg class="view-icon">
+
+                    </svg>
+                </div>
+                <div class="Main-content-header">
+                    <p class="header-text">Today</p>
+                </div>
+                <div class="Projects-list">
+                    <div class="Projects-header">
+                        <p class="text">My Projects</p>
+                    </div>
+                    <button class="addTaskToList">Add task</button>
+                    <form 
+                        id="my-form"
+                        style="visibility: hidden">
+                        
+                        <label for="title">What is your new To-do?</label>
+                        <input 
+                            type="text";
+                            id ="title-input";
+                            name="taskTitle"
+                            placeholder = "Work, play, whatever you like..."
+                            required>
+
+                        <label for="category">Category</label>
+                        <select
+                            id = "category-select"
+                            name="taskCategory"
+                            required>
+                            <option value="Fitness">Fitness</option>
+                            <option value="Social">Social</option>
+                            <option value="News">News</option>
+                        </select>
+
+                        <label for="timeInput">What time is this due?</label>
+                        <input
+                            type="text";
+                            id="dueTime";
+                            name="dueTime";
+                            required>
+                        
+                        <label for="dueDate">When is this due?</label>
+                        <input
+                            type="text";
+                            id="dueDate";
+                            name="dueDate";
+                            readonly;
+                            placeholder="Select a Date">
+
+                            <button
+                                type="button";
+                                id="calendar-trigger-btn">
+                            </button>
+
+                        <button type="submit" id="save-task-btn">
+                            Save Task
+                        </button>
+                            
+                    </form>
+                </div>
+
+                <div id="calendar-dropdown"></div>
+                <div class = "Teams-list">
+                    <div class="header-text">Teams</div>
+                    <div class="addTaskToList">Add task</div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
 </body>
 </html>
