@@ -5,60 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
 </head>
+
 <body>
     <div class="dashboard">
         <div class="sidebar">
             <div class="sidebar-header">
                 <div class="header info">
                     <p class="profile-name">Chris</p>
-                    <div class="profile icon"></div>
+                    <div class="profile icon">
+                        <img src="src/Headshot.jpeg">
+                    </div>
                 </div>
-                <div class="header icons">
-                    <svg class="icon-bell">
-
+                <div class="header icons"></div>
+                    <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                         stroke-width="1.5" stroke="currentColor" class="size-6">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M3.124 7.5A8.969 8.969 0 0 1 5.292 3m13.416 0a8.969 8.969 0 0 1 2.168 4.5" />
                     </svg>
-                    <svg class="layout-icon">
+                    <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                     stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 4.5v15m6-15v15m-10.875 0h15.75c.621 0 1.125-.504 1.125-1.125V5.625c0-.621-.504-1.125-1.125-1.125H4.125C3.504 4.5 3 5.004 3 5.625v12.75c0 .621.504 1.125 1.125 1.125Z" />
+                     </svg>
 
-                    </svg>
               </div>
-           </div>
 
            <div class="Sidebar-body-1">
                 <ul class="add-task">
-                    <svg class="plus">
-                    
-                    </svg>
+    
+
                     <p>Add task</p>
                 </ul>
                 <ul class="search">
-                    <svg class="magnifying-glass">
-                    
+                    <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                     stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                     </svg>
                     <p>Search</p>
                 </ul>
                  <ul class="inbox">
-                    <svg class="mail">
-                    
+                    <svg  width="25" height="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" 
+                    xstroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z" />
                     </svg>
+
                     <p>Inbox</p>
                 </ul>
                  <ul class="today">
-                    <svg class="calendar-icon">
-                    
+                    <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
                     </svg>
-                    <p>Today</p>
+
+                    <a href="#" id="todayTab">Today</a>
                 </ul>
                  <ul class="upcoming">
-                    <svg class="dotted-calendar">
-                    
+      
+                    <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 2.994v2.25m10.5-2.25v2.25m-14.252 13.5V7.491a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v11.251m-18 0a2.25 2.25 0 0 0 2.25 2.25h13.5a2.25 2.25 0 0 0 2.25-2.25m-18 0v-7.5a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v7.5m-6.75-6h2.25m-9 2.25h4.5m.002-2.25h.005v.006H12v-.006Zm-.001 4.5h.006v.006h-.006v-.005Zm-2.25.001h.005v.006H9.75v-.006Zm-2.25 0h.005v.005h-.006v-.005Zm6.75-2.247h.005v.005h-.005v-.005Zm0 2.247h.006v.006h-.006v-.006Zm2.25-2.248h.006V15H16.5v-.005Z" />
                     </svg>
                     <p>Upcoming</p>
                 </ul>
                  <ul class="filter">
-                    <svg class="filter-icon">
-                    
+                    <svg width="25" heigh="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 0 1-1.125-1.125v-3.75ZM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-8.25ZM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-2.25Z" />
                     </svg>
-                    <p>Filter</p>
+                    <p>Filters & Labels</p>
                 </ul>
            </div>
 
@@ -68,22 +80,22 @@
                     <svg class="project-icon">
 
                     </svg>
-                    <div class="header-title">My Projects</div>
+                    <a href="#" id="allProjectsTab">My Projects<a>
                 </div>
                 <div class="Fitness">
                     <svg class="hashtag-1">
                     </svg>
-                    <p class="text">Fitness</p>
+                    <a href="#" id="fitnessTab">Fitness</a>
                 </div>
-                <div class="Grocery">
+                <div class="Social">
                     <svg class="hashtag-2">
                     </svg>
-                    <p class="text">Grocery</p>
+                    <a href="#" id="socialTab">Social</a>
                 </div>
-                <div class="Appointments">
+                <div class="News">
                     <svg class="hashtag-3">
                     </svg>
-                    <p class="text">Appointments</p>
+                    <a href="#" id="newsTab">News</a>
                 </div>
               </div>
            </div>
@@ -124,22 +136,24 @@
 
                     </svg>
                 </div>
-                <div class="Main-content-header">
-                    <p class="header-text">Today</p>
-                </div>
                 <div class="Projects-list">
                     <div class="Projects-header">
                         <p class="text">My Projects</p>
                     </div>
                     <button class="addTaskToList">Add task</button>
+                    <div class="cardDisplayArea"></div>
                     <form 
                         id="my-form"
-                        style="visibility: hidden">
-                        
+                        class="hidden-form">
+                        <button id="close-form-btn" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </button>
                         <label for="title">What is your new To-do?</label>
                         <input 
-                            type="text";
-                            id ="title-input";
+                            type="text"
+                            id ="title-input"
                             name="taskTitle"
                             placeholder = "Work, play, whatever you like..."
                             required>
@@ -154,37 +168,27 @@
                             <option value="News">News</option>
                         </select>
 
-                        <label for="timeInput">What time is this due?</label>
-                        <input
-                            type="text";
-                            id="dueTime";
-                            name="dueTime";
+                        <label for="dueTime">What time is this due?</label>
+                        <input 
+                            type="time"
+                            id="dueTime"
+                            name="dueTime"
                             required>
                         
                         <label for="dueDate">When is this due?</label>
-                        <input
-                            type="text";
-                            id="dueDate";
-                            name="dueDate";
-                            readonly;
-                            placeholder="Select a Date">
-
-                            <button
-                                type="button";
-                                id="calendar-trigger-btn">
-                            </button>
-
+                        <input type="date" id="dueDate" name="dueDate" required>
                         <button type="submit" id="save-task-btn">
                             Save Task
                         </button>
                             
                     </form>
+                    <div id="form-overlay"></div>
                 </div>
 
                 <div id="calendar-dropdown"></div>
                 <div class = "Teams-list">
                     <div class="header-text">Teams</div>
-                    <div class="addTaskToList">Add task</div>
+                    <div class="addTask">Add task</div>
                 </div>
             </div>
         </div>

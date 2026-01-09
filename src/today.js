@@ -1,5 +1,5 @@
 import { taskArray } from "./task";
-import { taskcreation } from "./card";
+import { rendertask } from "./card";
 
 function getFormattedToday() {
     const today = new Date();
@@ -10,10 +10,7 @@ function getFormattedToday() {
 export function renderTodayTasks() {
     const todayString = getFormattedToday();
 
-    const todayTasks = taskArray.filter(task => {
-        return task.dueDate == todayString;
-    })
+    const todayTasks = taskArray.filter(task => task.dueDate === todayString);
 
-    todayTasks.forEach(task => (taskcreation()));
-
+    rendertask(todayTasks);
 }

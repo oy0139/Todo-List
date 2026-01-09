@@ -1,11 +1,7 @@
 export function formToggle() {
-    const formElement = document.getElementById("my-form")
+    const form = document.getElementById("my-form");
+    const overlay = document.getElementById("form-overlay");
 
-    formElement.classList.toggle('form-visible');
-
-    if (formElement.classList.contains('form-visible')) {
-        formElement.style.visibility = 'visible';
-    } else {
-        formElement.style.visibility = 'hidden';
-    }
+    form.classList.toggle("form-visible");
+    overlay.classList.toggle("visible");
 }

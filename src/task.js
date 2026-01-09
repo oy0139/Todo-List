@@ -1,10 +1,18 @@
 export const taskArray = [];
 
-export class task {
-    constructor(title, category, time, dueDate) {
+export class Task {
+    constructor(title, category, dueTime, dueDate) {
         this.title = title;
         this.category = category;
-        this.time = time;
+        this.dueTime = dueTime;
         this.dueDate = dueDate;
+        this.id = crypto.randomUUID();
+    }
+}
+
+export function repopulateTasks(data) {
+    taskArray.length = 0;
+    if (data && data.length > 0) {
+        data.forEach(t => taskArray.push(t));
     }
 }
