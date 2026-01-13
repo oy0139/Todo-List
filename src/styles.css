@@ -7,12 +7,86 @@
 
 .dashboard {
     display: grid;
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 300px 1fr;
 }
 
 .sidebar {
     display: grid;
-    gap: 20px;
+    gap: 10px;   
+    padding: 5px 10px;
+    background: rgb(250, 240, 240);
+    height: 100vh;
+}
+
+.sidebarHeader {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 130px;
+    height: 70px;
+    align-items: center;
+}
+
+.headerInfo {
+    display: grid;
+    grid-template-columns: 40px 40px;
+    gap: 5px;
+    align-items: center;
+}
+
+.headerIcons {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 30px);
+}
+
+.sidebarBody1{
+    display: grid;
+    row-gap: 15px;
+    margin-bottom: 20px;
+}
+
+.sidebarBody1 ul {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 35px);
+    white-space: nowrap;
+}
+
+.projectsSection {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.projectsSection > div {
+    display: grid;
+    row-gap: 15px;
+    grid-template-columns: 40px 50px;
+}
+
+.projectsSection div{
+    display: grid;
+    white-space: nowrap;
+    align-items: center;
+}
+
+.projectsHeader {
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    align-items: center;
+}
+
+.sidebarBody3 {
+    display: grid;
+    gap: 10px;
+}
+
+.sidebarBody3 > div {
+    display: grid;
+    grid-template-columns: 30px 30px;
+    gap: 10px;
+    white-space: nowrap;
+    align-items: center;
 }
 
 .addTaskToList {
@@ -50,4 +124,15 @@
     #my-form {
         width: 90%;
     }
+}
+
+a, a:visited, a:active {
+  text-decoration: none; 
+  color: inherit; 
+  transition:
+    color 0.15s ease;
+}
+
+a:hover {
+    color: rgb(63, 58, 58)
 }

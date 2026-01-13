@@ -1,6 +1,7 @@
 import "./styles.css";
 import "./form.css";
 import "./card.css";
+import "./ProfileIcon.css";
 
 import { filterByCategory } from "./categoryFilter.js";
 import { renderTodayTasks } from "./today.js";
@@ -10,12 +11,15 @@ import { formToggle } from "./formToggle.js";
 import { formSubmission } from "./formSubmission.js";
 import { setView } from "./viewState.js";
 import { renderAllCards } from "./myprojects.js";
+import { renderProfileIcon } from "./ProfileIcon.js";
 
 window.addEventListener("DOMContentLoaded", () => {
     const loadedData = loadDataFromStorage();
     repopulateTasks(loadedData);
 
     renderTodayTasks();
+
+    renderProfileIcon();
 
     document.getElementById("todayTab").addEventListener("click", (e) => {
         setView("today");
